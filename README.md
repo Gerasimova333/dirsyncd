@@ -2,8 +2,9 @@
 Solution for directory synchronization
 
 # Build
+```bash
 g++ -std=c++17 dirsyncd.cpp -o dirsyncd
-
+```
 # Usage
 dirsyncd <name of config file>
 
