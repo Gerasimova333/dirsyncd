@@ -6,7 +6,9 @@ Solution for directory synchronization
 g++ -std=c++17 dirsyncd.cpp -o dirsyncd
 ```
 # Usage
+```
 dirsyncd <name of config file>
+```
 
 # Config file structure
 Each line in config file is path to target directory.
