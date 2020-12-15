@@ -66,7 +66,7 @@ private:
     void recursiveCopyDir(const fs::path& src, const fs::path& dst) {
         fs::remove_all(dst);
         fs::create_directory(dst);
-        fs::copy(src, dst);
+        fs::copy(src, dst, fs::copy_options::copy_symlinks);
     }
 
     fs::file_time_type lastChangeTimeFromDir(const fs::path& dir) {
